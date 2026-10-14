@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modele</title>
+  <link rel="stylesheet" href="../assets/css/joc.css">
+  <link rel="stylesheet" href="../assets/css/modele.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">AutoShow</div>
+    <div class="menu-toggle"><div></div></div>
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="vanzare.html">Vanzare</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Modele disponibile</h1>
+    <div class="controls">
+      <label>Filtre: <select id="typeFilter"><option value="">Toate</option></select></label>
+      <input id="search" placeholder="Caută brand sau model" />
+    </div>
+    <section id="modelsList" class="models-list" aria-live="polite"></section>
+  </main>
+
+  <script src="../assets/js/models.js"></script>
+  <script src="../assets/js/auth-navbar.js"></script>
+</body>
+</html>

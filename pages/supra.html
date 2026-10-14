@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Secret Supra | Smokey Nagata</title>
+    <link rel="stylesheet" href="../assets/css/supra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/images/toyota.avif" alt="Toyota Logo">
+            <span>TOP SECRET</span>
+        </div>
+        <div class="menu-toggle"><div></div></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="navLogin"><a href="login.html">Logare</a></li>
+            <li id="navProfile" class="dropdown">
+              <button class="dropbtn" id="profileName">User</button>
+              <div class="dropdown-content">
+                <a href="profil.html#purchases">Istoric cumpărări</a>
+                <a href="profil.html#listings">Anunțuri puse la vânzare</a>
+                <a href="profil.html">Profil</a>
+                <a href="#" id="navLogout">Deconectare</a>
+              </div>
+            </li>
+            <li><a href="#story">Povestea</a></li>
+            <li><a href="#specs">Specificații</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>THE V12 SUPRA</h1>
+            <h2>Capodopera lui Smokey Nagata</h2>
+            <section class="hero-desc">Singura Toyota Supra din lume propulsată de un motor V12 Twin-Turbo, creată pentru a depăși 400 km/h.</section>
+            <a href="#specs" class="btn-gold">Vezi Motorul</a>
+        </div>
+    </header>
+
+    <section id="story" class="container section-padding">
+        <div class="story-grid">
+            <div class="story-image reveal">
+                <img src="../assets/images/supra-poster.jpg" alt="Smokey Nagata Poster">
+            </div>
+            <div class="story-text reveal">
+                <h3>Legenda Urbană</h3>
+                <h2>Cine este Smokey Nagata?</h2>
+                <article class="story-paragraph">Kazuhiko "Smokey" Nagata este fondatorul legendarului atelier de tuning <strong>Top Secret</strong> din Japonia. Este cunoscut în întreaga lume pentru cascadoria sa din 1999, când a încercat să atingă 320 km/h pe autostrada A1 din Marea Britanie, fapt ce a dus la arestarea sa și interzicerea intrării în UK.</article>
+                <article class="story-paragraph">Nemulțumit de performanțele standard, el a creat "The Golden Supra": o mașină care a renunțat la legendarul motor 2JZ în favoarea unui monstru V12 provenit de pe o Toyota Century, modificat extensiv.</article>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="specs-section">
+        <div class="container">
+            <h2 class="section-title reveal">Inginerie Extremă</h2>
+            <div class="specs-container">
+                <div class="specs-details reveal">
+                    <div class="spec-card">
+                        <h4>Motor</h4>
+                        <section class="spec-value">5.0L 1GZ-FE V12</section>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Inducție</h4>
+                        <section class="spec-value">Twin HKS GT2835 Turbos</section>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Putere</h4>
+                        <section class="spec-value">930 CP / 1010 Nm</section>
+                    </div>
+                    <div class="spec-card">
+                        <h4>Viteză Max</h4>
+                        <section class="spec-value">358.22 km/h (Nardo Ring)</section>
+                    </div>
+                </div>
+                <div class="specs-image reveal">
+                    <img src="../assets/images/supra-engine.jpg" alt="Motor V12 Supra">
+                    <span class="img-caption">Inima Bestiei: V12 Twin Turbo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container section-padding">
+        <h2 class="section-title reveal">Galerie Foto</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="../assets/images/supra_front.jpg" alt="Supra Front">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="../assets/images/supra_spate.jpg" alt="Supra Spate">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="../assets/images/supra_interior.jpg" alt="Supra Interior">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <img src="../assets/images/toyota.avif" alt="Toyota Logo" class="footer-logo">
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/auth-navbar.js"></script>
+</body>
+</html>

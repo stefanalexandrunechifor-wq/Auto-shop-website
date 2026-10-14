@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "model": "Supra V12",
+    "year": 1999,
+    "power": 930,
+    "type": "Sport",
+    "price": 125000,
+    "img": "../assets/images/supra-poster.jpg"
+  },
+  {
+    "id": 2,
+    "brand": "Nissan",
+    "model": "Skyline R34",
+    "year": 1999,
+    "power": 400,
+    "type": "Sport",
+    "price": 85000,
+    "img": "../assets/images/gtr-prez.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Mercedes",
+    "model": "C124 Brabus",
+    "year": 1987,
+    "power": 360,
+    "type": "Coupe",
+    "price": 45000,
+    "img": "../assets/images/mertan-prez.avif"
+  },
+  {
+    "id": 4,
+    "brand": "BMW",
+    "model": "M3 E46",
+    "year": 2001,
+    "power": 343,
+    "type": "Sedan",
+    "price": 42000,
+    "img": "../assets/images/bmw.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "Dacia",
+    "model": "Duster Tuning",
+    "year": 2020,
+    "power": 150,
+    "type": "SUV",
+    "price": 18000,
+    "img": "../assets/images/dacia.gif"
+  }
+]

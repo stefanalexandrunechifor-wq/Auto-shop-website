@@ -1,0 +1,47 @@
+.entry-card, .purchase-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px 0;
+  background: #0f0f0f;
+  border-radius: 6px;
+}
+.purchase-card { border-color: #2f8f5f; }
+.entry-card h4, .purchase-card h4 { margin: 0 0 8px 0; }
+.entry-card ul, .purchase-card ul { margin: 0 0 8px 12px; }
+.entry-images { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+.entry-images img { max-width:120px; height:auto; border-radius:4px; }
+.entry-delete { background:#b33; color:#fff; border:none; padding:6px 10px; border-radius:4px; cursor:pointer; }
+.entry-delete:hover { opacity:0.9; }
+#userInfo { margin: 12px 0; font-weight:700; }
+.btn {
+  background-color: #ff3c00;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e63600;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #ff3c00;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #e63600;
+}

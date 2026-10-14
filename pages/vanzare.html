@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+   <head>
+      <title>Formular de vanzare automobil</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../assets/css/vanzare.css" type="text/css">
+   </head>
+   <body>
+     <h3>Formular de vanzare automobil</h3>
+     <div id="userInfo" class="user-info"></div>
+      <fieldset>
+        <legend>Date personale</legend>
+     <div id="container"> 
+       <form id="vanzareForm" method="post" action="#" target="_self" onsubmit="handleFormSubmit(event)">
+        <label>nume</label>
+        <input type="text" id="nume" name="nume" minlength="3" maxlength="30" required>
+    <br><br>
+        <label>CNP</label>
+         <input type="text" id="CNP" name="CNP" minlength="8" maxlength="20" 
+           pattern="[0-9]{6,18}" required>
+    <small>(exemplu pattern:5aallzz180023)</small>
+    <br><br>
+        <label>data nasterii</label>
+        <input type="date" id="dob" name="dob" min="1800-01-01" max="2024-05-13" required>
+    <br><br>
+        <label>Pret dorit</label>
+        <input type="number" id="credit" name="credit"  required 
+           oninput="document.getElementById('creditValue').textContent = this.value">
+    <span id="creditValue">0</span> euro
+    <br><br>
+        <label>Fotografii ale autovehiculului</label>
+        <input type="file" id="photo" name="photo" accept="image/*" multiple onchange="previewImages(this.files)">
+        <div id="photoPreview" class="photo-preview" aria-live="polite"></div>
+    <br><br>
+        <label>Tip</label>
+         <select id="tip" name="tip" required>
+      <option value="">Alege</option>
+      <option>SUV</option>
+      <option>Break</option>
+      <option>Sedan</option>
+      <option>Cabrio</option>
+      <option>Altele</option>
+    </select>
+    <br><br>
+     <label for="model">Model</label>
+     <input type="text" id="model">
+     <br><br>
+
+  </fieldset>
+    <fieldset>
+    <legend>Detalii tehnice</legend>
+
+    <label for="stare">Stare</label>
+    <select id="stare" name="stare" required>
+      <option value="">Alege</option>
+      <option>Noua</option>
+      <option>Foarte buna</option>
+      <option>Buna</option>
+      <option>Proasta</option>
+      <option>Foarte proasta</option>
+    </select>
+    <br><br>
+    <br><br>
+
+    <label for="km"> Kilometraj:</label>
+    <input type="text" id="km" name="km" required>
+    <br><br>
+
+    <label for="fabricatie">An fabricatie:</label>
+    <textarea id="fabricatie" name="fabricatie" required></textarea>
+    <br><br>
+
+    <label for="phone">Număr de telefon:</label>
+    <input type="tel" id="phone" name="phone" required 
+           pattern="[0-9]{10}">
+    <small>(exemplu pattern: 07703456789)</small>
+    <br><br>
+
+    <label for="email">Adresă de email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="website">Pagina web personală:</label>
+    <input type="url" id="website" name="website"  
+           pattern="https://.*">
+    <small>(trebuie să înceapă cu https://)</small>
+    <br><br>
+
+  </fieldset>
+   <fieldset>
+    <legend>Alte detalii legate de autovehicul:</legend>
+    <label for="details"></label>
+    <textarea id="details" name="details" rows="4"></textarea>
+    <br><br>
+</fieldset>
+    <button type="submit">Trimite formularul</button>
+    <a href="index.html" class="btn">Inapoi pe pagina principala</a>
+  </form>
+  <script src="../assets/js/vanzare.js"> </script>
+  </body>
+</html>
